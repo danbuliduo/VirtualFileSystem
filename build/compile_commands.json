@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/TengMing/VirtualFileSystem/build",
+  "command": "D:\\Tools\\MSYS2\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\VFS.dir\\main.cpp.obj -c D:\\TengMing\\VirtualFileSystem\\src\\main.cpp",
+  "file": "D:/TengMing/VirtualFileSystem/src/main.cpp"
+},
+{
+  "directory": "D:/TengMing/VirtualFileSystem/build",
+  "command": "D:\\Tools\\MSYS2\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\VFS.dir\\command.cpp.obj -c D:\\TengMing\\VirtualFileSystem\\src\\command.cpp",
+  "file": "D:/TengMing/VirtualFileSystem/src/command.cpp"
+}
+]
