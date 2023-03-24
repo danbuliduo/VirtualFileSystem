@@ -483,6 +483,7 @@ CMakeFiles/VFS.dir/main.cpp.obj: D:/TengMing/VirtualFileSystem/src/main.cpp \
   D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h \
   D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/glue_algorithm_defs.h \
   D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/execution_defs.h \
+  D:/TengMing/VirtualFileSystem/src/data.h \
   D:/TengMing/VirtualFileSystem/src/command.h \
   D:/TengMing/VirtualFileSystem/src/virfile.hpp \
   D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/stdc++.h \
@@ -1339,3 +1340,5 @@ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/memory_resource:
 D:/Tools/MSYS2/mingw64/include/direct.h:
 
 D:/Tools/MSYS2/mingw64/include/io.h:
+
+D:/TengMing/VirtualFileSystem/src/data.h:

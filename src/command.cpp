@@ -105,8 +105,8 @@ void Command::pwd(VFolder *workFolder) {
         folder = folder->pareant();
     }
     std::cout << "/";
-    for(int i = folders.size() -2; i > 0; --i) {
+    for(int i = folders.size() -1; i > 0; --i) {
         std::cout << folders.at(i) << "/";
     }
-    std::cout << folders.size() << std::endl;
+    std::cout << folders.at(0) << std::endl;
 }

@@ -15,4 +15,5 @@ public:
     static bool rmdir(VFolder *workFolder, std::string name);
     static bool create(VFolder *workFolder, VFile *subFile);
     static bool rm(VFolder *workFolder, std::string name);
+    static bool df(VFolder *workFolder);
 };
