@@ -1,3 +1,3 @@
 D:\QtFramework\root\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\VFS.dir/objects.a
 D:\Tools\MSYS2\mingw64\bin\ar.exe qc CMakeFiles\VFS.dir/objects.a @CMakeFiles\VFS.dir\objects1.rsp
-D:\Tools\MSYS2\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\VFS.dir/objects.a -Wl,--no-whole-archive -o VFS.exe -Wl,--out-implib,libVFS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\VFS.dir\linklibs.rsp
+D:\Tools\MSYS2\mingw64\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\VFS.dir/objects.a -Wl,--no-whole-archive -o VFS.exe -Wl,--out-implib,libVFS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\VFS.dir\linklibs.rsp

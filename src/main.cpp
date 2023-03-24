@@ -1,23 +1,14 @@
-#ifdef _WIN32
-#include <direct.h>
-#elif __APPLE__ || __linux__
-#include <unistd.h>
-#endif
-#include <iostream>
-#include <algorithm>
-#include "./data.h"
 #include "./command.h"
 #include "./utils.hpp"
 #include "./virfile.hpp"
 
-class Application
-{
+
+class Application {
 public:
-    static void run(VFolder *folder, long long size = 10*1024)
+    static void run(VFileSystem *system)
     {
-        BannerUtils::loadBanner();
-        VFolder *workfolder = folder;
-        long long max_size = size;
+        VFolder *workfolder = (VFolder*) system->subfile("root");
+        VFile *workFile = nullptr;
         while (true) {
             std::string instr;
             std::cout << "[root@Admin " << workfolder->name() << "]# ";
@@ -43,6 +34,26 @@ public:
             } else if (instr == "rm") {
                 std::cin >> instr;
                 Command::rm(workfolder, instr);
+            }  else if (instr == "open") {
+                std::cin >> instr;
+                workFile = Command::open(workfolder, instr);
+            } else if (instr == "cat") {
+                if(workFile != nullptr) {
+                    Command::cat(workFile);
+                } else {
+                    std::cout << "INFO: Not Open File." << std::endl;
+                }
+            } else if (instr == "write") {
+                if(workFile != nullptr) {
+                    std::cin >> instr;
+                    Command::write(workFile, instr);
+                } else {
+                    std::cout << "INFO: Not Open File." << std::endl;
+                }
+            }else if(instr == "vi") {
+                workFile = nullptr;
+            } else if (instr == "df") {
+                Command::df(system);
             } else if (instr == "exit") {
                 std::cout << "INFO: Are you sure you want to exit the system? (Y/N)" << std::endl;
                 std::cout << "[root@Admin " << workfolder->name() << "]# ";
@@ -58,15 +69,5 @@ public:
 };
 
 int main(int argc, char *argv[]) {
-    VFolder *system = new VFolder("/");
-    VFolder *root = new VFolder("root");
-    root->create(new VFile("centos7.sh", CENTOS7_SH));
-    root->create(new VFile("install.sh", INSTALL_SH));
-    root->create(new VFolder("home"));
-    system->create(root);
-    system->create(new VFolder("boot"));
-    system->create(new VFolder("etc"));
-    system->create(new VFolder("usr"));
-    system->create(new VFolder("sys"));
-    Application::run(root, 10*1024);
+    Application::run(new VFileSystem(10 * 1024));
 }

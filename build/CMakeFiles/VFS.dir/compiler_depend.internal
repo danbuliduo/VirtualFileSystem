@@ -337,7 +337,15 @@ CMakeFiles/VFS.dir/command.cpp.obj
 
 CMakeFiles/VFS.dir/main.cpp.obj
  D:/TengMing/VirtualFileSystem/src/main.cpp
- D:/Tools/MSYS2/mingw64/include/direct.h
+ D:/TengMing/VirtualFileSystem/src/command.h
+ D:/TengMing/VirtualFileSystem/src/virfile.hpp
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/stdc++.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cassert
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++config.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/os_defines.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/pstl_config.h
+ D:/Tools/MSYS2/mingw64/include/assert.h
  D:/Tools/MSYS2/mingw64/include/crtdefs.h
  D:/Tools/MSYS2/mingw64/include/corecrt.h
  D:/Tools/MSYS2/mingw64/include/_mingw.h
@@ -345,160 +353,52 @@ CMakeFiles/VFS.dir/main.cpp.obj
  D:/Tools/MSYS2/mingw64/include/_mingw_secapi.h
  D:/Tools/MSYS2/mingw64/include/vadefs.h
  D:/Tools/MSYS2/mingw64/include/sdks/_mingw_ddk.h
- D:/Tools/MSYS2/mingw64/include/io.h
- D:/Tools/MSYS2/mingw64/include/string.h
- D:/Tools/MSYS2/mingw64/include/sec_api/string_s.h
- D:/Tools/MSYS2/mingw64/include/_mingw_off_t.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/iostream
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++config.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/os_defines.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/pstl_config.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ostream
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ios
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/iosfwd
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stringfwd.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/memoryfwd.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/postypes.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cwchar
- D:/Tools/MSYS2/mingw64/include/wchar.h
- D:/Tools/MSYS2/mingw64/include/corecrt_stdio_config.h
- D:/Tools/MSYS2/mingw64/include/corecrt_wstdlib.h
- D:/Tools/MSYS2/mingw64/include/_mingw_stat64.h
- D:/Tools/MSYS2/mingw64/include/swprintf.inl
- D:/Tools/MSYS2/mingw64/include/sec_api/wchar_s.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/exception
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception_ptr.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception_defines.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cxxabi_init_exception.h
- D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h
- D:/Tools/MSYS2/mingw64/include/stddef.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/typeinfo
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/hash_bytes.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/new
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/move.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/type_traits
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/nested_exception.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/char_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdint
- D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h
- D:/Tools/MSYS2/mingw64/include/stdint.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/localefwd.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++locale.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/clocale
- D:/Tools/MSYS2/mingw64/include/locale.h
- D:/Tools/MSYS2/mingw64/include/stdio.h
- D:/Tools/MSYS2/mingw64/include/sec_api/stdio_s.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cctype
- D:/Tools/MSYS2/mingw64/include/ctype.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ios_base.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/atomicity.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/gthr.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/gthr-default.h
- D:/Tools/MSYS2/mingw64/include/pthread.h
- D:/Tools/MSYS2/mingw64/include/errno.h
- D:/Tools/MSYS2/mingw64/include/sys/types.h
- D:/Tools/MSYS2/mingw64/include/process.h
- D:/Tools/MSYS2/mingw64/include/corecrt_startup.h
- D:/Tools/MSYS2/mingw64/include/limits.h
- D:/Tools/MSYS2/mingw64/include/signal.h
- D:/Tools/MSYS2/mingw64/include/pthread_signal.h
- D:/Tools/MSYS2/mingw64/include/time.h
- D:/Tools/MSYS2/mingw64/include/sys/timeb.h
- D:/Tools/MSYS2/mingw64/include/sec_api/sys/timeb_s.h
- D:/Tools/MSYS2/mingw64/include/_timeval.h
- D:/Tools/MSYS2/mingw64/include/pthread_time.h
- D:/Tools/MSYS2/mingw64/include/pthread_compat.h
- D:/Tools/MSYS2/mingw64/include/pthread_unistd.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/atomic_word.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_classes.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/string
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/allocator.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++allocator.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/new_allocator.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/functexcept.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cpp_type_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ostream_insert.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cxxabi_forced.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator_base_types.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator_base_funcs.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/concept_check.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/debug/assertions.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/type_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ptr_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_function.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/backward/binders.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/numeric_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_algobase.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_pair.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/utility.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/debug/debug.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/predefined_ops.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/refwrap.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/invoke.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/range_access.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/initializer_list
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_string.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/alloc_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/alloc_traits.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_construct.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/string_view
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/functional_hash.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/string_view.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/string_conversions.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/stdlib.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdlib
  D:/Tools/MSYS2/mingw64/include/stdlib.h
+ D:/Tools/MSYS2/mingw64/include/corecrt_wstdlib.h
+ D:/Tools/MSYS2/mingw64/include/limits.h
  D:/Tools/MSYS2/mingw64/include/sec_api/stdlib_s.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/stdlib.h
  D:/Tools/MSYS2/mingw64/include/malloc.h
  D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h
+ D:/Tools/MSYS2/mingw64/include/errno.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/std_abs.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdio
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cctype
+ D:/Tools/MSYS2/mingw64/include/ctype.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cerrno
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/charconv.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_string.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_classes.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/system_error
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/error_constants.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/stdexcept
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/streambuf
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/streambuf.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_ios.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_facets.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cwctype
- D:/Tools/MSYS2/mingw64/include/wctype.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/ctype_base.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/streambuf_iterator.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/ctype_inline.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_facets.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_ios.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ostream.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/istream
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/istream.tcc
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/algorithm
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_algo.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/algorithmfwd.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_heap.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_tempbuf.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/glue_algorithm_defs.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/execution_defs.h
- D:/TengMing/VirtualFileSystem/src/data.h
- D:/TengMing/VirtualFileSystem/src/command.h
- D:/TengMing/VirtualFileSystem/src/virfile.hpp
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/stdc++.h
- D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cassert
- D:/Tools/MSYS2/mingw64/include/assert.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cfloat
  D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/float.h
  D:/Tools/MSYS2/mingw64/include/float.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ciso646
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/climits
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/clocale
+ D:/Tools/MSYS2/mingw64/include/locale.h
+ D:/Tools/MSYS2/mingw64/include/stdio.h
+ D:/Tools/MSYS2/mingw64/include/corecrt_stdio_config.h
+ D:/Tools/MSYS2/mingw64/include/_mingw_off_t.h
+ D:/Tools/MSYS2/mingw64/include/swprintf.inl
+ D:/Tools/MSYS2/mingw64/include/sec_api/stdio_s.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cmath
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cpp_type_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/type_traits.h
  D:/Tools/MSYS2/mingw64/include/math.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/specfun.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_algobase.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/functexcept.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception_defines.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/numeric_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_pair.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/type_traits
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/move.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/utility.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator_base_types.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator_base_funcs.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/concept_check.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/debug/assertions.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_iterator.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ptr_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/debug/debug.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/predefined_ops.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/limits
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/tr1/gamma.tcc
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/tr1/special_function_util.h
@@ -515,16 +415,104 @@ CMakeFiles/VFS.dir/main.cpp.obj
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/csetjmp
  D:/Tools/MSYS2/mingw64/include/setjmp.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/csignal
+ D:/Tools/MSYS2/mingw64/include/signal.h
+ D:/Tools/MSYS2/mingw64/include/pthread_signal.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdarg
  D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h
  D:/Tools/MSYS2/mingw64/include/stdarg.h
  D:/Tools/MSYS2/mingw64/include/_mingw_stdarg.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstddef
+ D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h
+ D:/Tools/MSYS2/mingw64/include/stddef.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdio
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstring
+ D:/Tools/MSYS2/mingw64/include/string.h
+ D:/Tools/MSYS2/mingw64/include/sec_api/string_s.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ctime
+ D:/Tools/MSYS2/mingw64/include/time.h
+ D:/Tools/MSYS2/mingw64/include/sys/timeb.h
+ D:/Tools/MSYS2/mingw64/include/sec_api/sys/timeb_s.h
+ D:/Tools/MSYS2/mingw64/include/_timeval.h
+ D:/Tools/MSYS2/mingw64/include/pthread_time.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cwchar
+ D:/Tools/MSYS2/mingw64/include/wchar.h
+ D:/Tools/MSYS2/mingw64/include/_mingw_stat64.h
+ D:/Tools/MSYS2/mingw64/include/sec_api/wchar_s.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cwctype
+ D:/Tools/MSYS2/mingw64/include/wctype.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ccomplex
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/complex
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/sstream
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/istream
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ios
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/iosfwd
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stringfwd.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/memoryfwd.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/postypes.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/exception
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/exception_ptr.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cxxabi_init_exception.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/typeinfo
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/hash_bytes.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/new
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/nested_exception.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/char_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cstdint
+ D:/Tools/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h
+ D:/Tools/MSYS2/mingw64/include/stdint.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/localefwd.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++locale.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ios_base.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/atomicity.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/gthr.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/gthr-default.h
+ D:/Tools/MSYS2/mingw64/include/pthread.h
+ D:/Tools/MSYS2/mingw64/include/sys/types.h
+ D:/Tools/MSYS2/mingw64/include/process.h
+ D:/Tools/MSYS2/mingw64/include/corecrt_startup.h
+ D:/Tools/MSYS2/mingw64/include/pthread_compat.h
+ D:/Tools/MSYS2/mingw64/include/pthread_unistd.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/atomic_word.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_classes.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/string
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/allocator.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/c++allocator.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/new_allocator.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ostream_insert.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/cxxabi_forced.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_function.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/backward/binders.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/refwrap.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/invoke.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/range_access.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/initializer_list
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_string.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/alloc_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/alloc_traits.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_construct.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/string_view
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/functional_hash.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/string_view.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ext/string_conversions.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/charconv.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_string.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_classes.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/system_error
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/error_constants.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/stdexcept
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/streambuf
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/streambuf.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_ios.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_facets.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/ctype_base.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/streambuf_iterator.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/x86_64-w64-mingw32/bits/ctype_inline.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_facets.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/basic_ios.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ostream
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/ostream.tcc
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/istream.tcc
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/sstream.tcc
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cfenv
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/fenv.h
@@ -538,6 +526,14 @@ CMakeFiles/VFS.dir/main.cpp.obj
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/ctgmath
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/cuchar
  D:/Tools/MSYS2/mingw64/include/uchar.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/algorithm
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_algo.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/algorithmfwd.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_heap.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_tempbuf.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/glue_algorithm_defs.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/pstl/execution_defs.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bitset
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/deque
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stl_uninitialized.h
@@ -574,6 +570,7 @@ CMakeFiles/VFS.dir/main.cpp.obj
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_facets_nonio.tcc
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/locale_conv.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/quoted_string.h
+ D:/Tools/MSYS2/mingw64/include/c++/12.2.0/iostream
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/iterator
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/bits/stream_iterator.h
  D:/Tools/MSYS2/mingw64/include/c++/12.2.0/list

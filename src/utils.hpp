@@ -51,3 +51,21 @@ public:
         return _str;
     }
 };
+
+class ByteUtils {
+public:
+    static std::string byte_string(long long size) {
+        std::string auto_size;
+        long double real_size = (long double) size;
+        if(real_size < 1024 ) {
+            auto_size = std::to_string(real_size) + "B";
+        } else if(real_size >= 1024) {
+            auto_size = std::to_string(real_size / 1024) + "KB";
+        } else if(real_size >= 1024 * 1024) {
+            auto_size = std::to_string(real_size / 1024 / 1024) + "MB";
+        } else {
+            auto_size = std::to_string(real_size / 1024 / 1024 /1024) + "GB";
+        }
+        return auto_size;
+    }
+};

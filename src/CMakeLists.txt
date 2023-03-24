@@ -4,7 +4,7 @@ project(VFS VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(VFS main.cpp command.cpp utils.hpp virfile.hpp data.h)
+add_executable(VFS main.cpp command.cpp utils.hpp virfile.hpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
