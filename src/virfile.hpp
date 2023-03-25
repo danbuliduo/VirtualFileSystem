@@ -36,6 +36,10 @@ public:
     virtual bool rname(std::string name) {
         return false;
     }
+    void chmod(bool read, bool write) {
+        this->_read = read;
+        this->_write = write;
+    }
 
     bool is_read() {
         return this->_read;
@@ -88,7 +92,7 @@ public:
     }
 
     bool create(VIR *file) {
-        if(!contains(file->name())) {
+        if(_write && !contains(file->name())) {
             LMT();
             context[file->name()] = file;
             file->set_parent(this);
@@ -97,9 +101,12 @@ public:
         return false;
     }
 
-    bool delect(std::string name) {
-        if(contains(name)) {
+    bool delect(std::string name, bool gc = false) {
+        if(_write && contains(name)) {
             LMT();
+            if(gc && context[name] != nullptr) {
+                delete context[name];
+            }
             context.erase(name);
             return true;
         }
@@ -122,17 +129,20 @@ public:
     }
 
     bool mv_parent(VFolder *folder) override {
-        if(!folder->contains(_name)) {
+        if(_write && !folder->contains(_name)) {
             this->_parent->delect(_name);
             folder->create(this);
             return true;
         }
         return false;
     }
+
     bool rname(std::string name) override {
         if (_write && !_parent->contains(name)) {
-            LMT();
+            this->_parent->delect(this->_name);
             this->_name = name;
+            this->_parent->create(this);
+            LMT();
             return true;
         }
         return false;
@@ -170,7 +180,7 @@ public:
     }
 
     bool mv_parent(VFolder *folder) override {
-        if(!folder->contains(_name)) {
+        if(_write && !folder->contains(_name)) {
             this->_parent->delect(_name);
             folder->create(this);
             return true;
@@ -179,8 +189,10 @@ public:
     }
     bool rname(std::string name) override {
         if (_write && !_parent->contains(name)) {
-            LMT();
+            this->_parent->delect(_name);
             this->_name = name;
+            this->_parent->create(this);
+            LMT();
             return true;
         }
         return false;
@@ -200,6 +212,7 @@ class VFileSystem : public VFolder
 public:
     VFileSystem(long long max_size) : VFolder("/")
     {
+        this->_type = "sys";
         VFolder *etc = new VFolder("etc");
         VFolder *usr = new VFolder("usr");
         VFolder *home = new VFolder("home");

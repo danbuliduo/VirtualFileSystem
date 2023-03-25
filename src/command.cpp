@@ -23,7 +23,7 @@ bool Command::mkdir(VFolder *workFolder, VFolder *subFolder) {
 }
 
 bool Command::rmdir(VFolder *workFolder, std::string name) {
-    if(workFolder->delect(name)) {
+    if(workFolder->delect(name, true)) {
         std::cout << "INFO: OK." << std::endl;
         return true;
     }
@@ -41,7 +41,7 @@ bool Command::create(VFolder *workFolder, VFile *subFile) {
 }
 
 bool Command::rm(VFolder *workFolder, std::string name) {
-    if(workFolder->delect(name)) {
+    if(workFolder->delect(name, true)) {
         std::cout << "INFO: OK." << std::endl;
         return true;
     }
@@ -62,6 +62,10 @@ VFolder* Command::cd(VFolder *workFolder, std::string name) {
         for(auto &item : StringUtils::split(name, "/")) {
             if (workFolder->contains(item) && workFolder->subfile(item)->type() == "dir") {
                 workFolder = (VFolder *)workFolder->subfile(item);
+                if(!workFolder->is_read()) {
+                    std::cout << "WRAN: Dir not readable." << std::endl;
+                    return folder;
+                }
             } else {
                 std::cout << "ERROR: The directory does not exist!" << std::endl;
                 return folder;
@@ -114,6 +118,12 @@ void Command::df(VFileSystem *system) {
     long double p = (((long double) system->size()) / ((long double) system->maxsize())) * 100.0;
     std::string s = ByteUtils::byte_string(system->size());
     std::string m = ByteUtils::byte_string(system->maxsize());
+    long long _p = (long long) (p / 2);
+    std::cout << "[";
+    for(int i = 0; i < 50; i++) {
+        std::cout << (i < _p ? "#" : "-");
+    }
+    std::cout << "]\n";
     std::cout << "Maximum Disk Memory: " << m << "\n"
               << "Disk Used Memory: " << s << "\n"
               << "Disk Memory Usage: " << p << "%" <<std::endl;
@@ -124,7 +134,7 @@ VFile *Command::open(VFolder *workFolder, std::string name) {
         std::cout << "INFO: OK." << std::endl;
         return (VFile*) workFolder->subfile(name);
     }
-    std::cout << "WRAN: Open "<< name << "Filed!" << std::endl;
+    std::cout << "WRAN: Open "<< name << " Filed!" << std::endl;
     return nullptr;
 }
 
@@ -138,22 +148,58 @@ bool Command::cat(VFile *file) {
     return false;
 }
 
-bool Command::write(VFile *file, std::string str)
+bool Command::write(VFile *file, std::string str, bool cover)
 {
-    if (file->is_write()) {
-        bool ok = true;
-        if(str == "-a") {
-            std::cin >> str;
-            ok = false;
-        }
+    if (file->is_write() && file->write_content(str, cover)) {
         std::cout << "INFO: OK." << std::endl;
-        file->write_content(str, ok);
         return true;
     }
     std::cout << "INFO: File not writeable." << std::endl;
     return false;
 }
 
-bool Command::mv(VFileSystem *system, VIR *vir, std::string name) {
-    return true;
+bool Command::mv(VFileSystem *system, VIR *vir, std::string path) {
+    VFolder* folder = system;
+    for(auto &item : StringUtils::split(path, "/")) {
+        if(item.size() > 0) {
+            if (folder->contains(item) && folder->subfile(item)->type() == "dir") {
+                folder = (VFolder *) folder->subfile(item);
+            } else {
+                std::cout << "ERROR: Move Filed!" << std::endl;
+                return false;
+            }
+        }
+    }
+    if(vir->mv_parent(folder)) {
+        std::cout << "INFO: OK." << std::endl;
+        return true;
+    }
+    std::cout << "WRAN: File already exist" << std::endl;
+    return false;
+}
+
+bool Command::rename(VIR *vir, std::string newname) {
+    if(vir->rname(newname)) {
+        std::cout << "INFO: OK." << std::endl;
+        return true;
+    }
+    std::cout << "WRAN: Rename Filed!" << std::endl;
+    return false;
+}
+
+bool Command::chmod(VIR *vir, std::string prom) {
+    if(prom == "r") {
+        vir->chmod(true, false);
+        return true;
+    } else if(prom == "w") {
+        vir->chmod(false, true);
+        return true;
+    } else if(prom == "rw") {
+        vir->chmod(true, true);
+        return true;
+    } else if(prom == "--") {
+        vir->chmod(false, false);
+        return true;
+    }
+    return false;
 }

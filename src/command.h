@@ -15,9 +15,11 @@ public:
     static bool rmdir(VFolder *workFolder, std::string name);
     static bool create(VFolder *workFolder, VFile *subFile);
     static bool rm(VFolder *workFolder, std::string name);
-    static VFile *open(VFolder *workFolder, std::string name);
+    static VFile* open(VFolder *workFolder, std::string name);
     static bool cat(VFile *file);
-    static bool write(VFile *file, std::string str);
+    static bool write(VFile *file, std::string str, bool cover = true);
     static void df(VFileSystem *system);
-    static bool mv(VFileSystem *system, VIR *vir, std::string name);
+    static bool mv(VFileSystem *system, VIR *vir, std::string path);
+    static bool rename(VIR *vir, std::string newname);
+    static bool chmod(VIR *vir, std::string prom);
 };
