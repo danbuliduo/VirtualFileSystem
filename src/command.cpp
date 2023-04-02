@@ -97,7 +97,7 @@ void Command::help() {
               << " 12.Write the file.................(write [-a] <content>)\n"
               << " 13.Move a file.............. .........(mv <file> <path>)\n"
               << " 14.Delete a file............................(rm <fname>)\n"
-              << " 15.Modify permissions.........(chmod <file> [r|w|rw|--])\n"
+              << " 15.Modify permissions.........(chmod <name> [r|w|rw|--])\n"
               << " 16.Modify File Name.....................(rename <fname>)\n"
               << " 17.View Disk Usage..................................(df)\n"
               << std::endl;

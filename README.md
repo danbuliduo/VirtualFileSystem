@@ -16,6 +16,8 @@ utils.hpp
 
     class StringUtils - string工具类
 
+    class ByteUtils - byte格式化工具
+
 virfile.hpp
 
     class VIR 抽象文件类
